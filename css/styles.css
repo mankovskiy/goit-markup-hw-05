@@ -302,7 +302,40 @@ img {
   letter-spacing: 0.03em;
 }
 
+.thumb {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.overlay-work {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.overlay-work .title {
+  /* display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
 /* ---------------------------------------------------Наша команда ------------------------------------------*/
+
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
