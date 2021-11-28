@@ -720,13 +720,12 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
-  transition: opacity 1000ms, visibility 1000ms;
+  transition: opacity 250ms, visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
-  transform: rotate(-180deg) translate(-1000px);
-  /* transform-origin: bottom left; */
-  transition: transform 1000ms;
+  transform: translate(-50%, -50%) rotate(180deg) translateY(1000px) scale(0.1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -737,9 +736,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(0) rotate(0deg);
-  transform: translate(-50%, -50%);
-  transition: transform 1000ms;
+  transform: translate(-50%, -50%) translate(0) rotate(0deg) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close {
